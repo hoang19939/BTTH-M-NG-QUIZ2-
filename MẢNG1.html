@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<script>
+let iptext = prompt('Enter with text ')
+let arr = iptext.split('')
+for (i=0;i<arr.length;i++){
+    if (arr[i]===arr[i].toUpperCase()) {
+        arr[i]=arr[i].toLowerCase()
+
+    }else {
+        arr[i]=arr[i].toUpperCase()
+    }
+
+}document.write(arr.join(''));
+
+</script>
+
+</body>
+</html>

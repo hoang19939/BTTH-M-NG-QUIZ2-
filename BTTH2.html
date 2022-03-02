@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="st1">
+<button onclick="result()">KQ</button>
+<script>
+
+    function result() {
+        arr = document.getElementById('st1').value;
+        let arr1 = arr.split('')
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i]%2 === 0 && arr1[i + 1] % 2 === 0) {
+                arr1.splice(i + 1, 0, "-");
+            }
+        }
+        document.write(arr1.join(""));
+    }
+
+
+
+</script>
+
+
+</body>
+</html>
